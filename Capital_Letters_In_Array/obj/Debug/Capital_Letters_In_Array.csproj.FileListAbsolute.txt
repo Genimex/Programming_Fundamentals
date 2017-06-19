@@ -1,0 +1,5 @@
+C:\Users\Ivcho\documents\visual studio 2015\Projects\Arrays\Capital_Letters_In_Array\bin\Debug\Capital_Letters_In_Array.exe.config
+C:\Users\Ivcho\documents\visual studio 2015\Projects\Arrays\Capital_Letters_In_Array\bin\Debug\Capital_Letters_In_Array.exe
+C:\Users\Ivcho\documents\visual studio 2015\Projects\Arrays\Capital_Letters_In_Array\bin\Debug\Capital_Letters_In_Array.pdb
+C:\Users\Ivcho\documents\visual studio 2015\Projects\Arrays\Capital_Letters_In_Array\obj\Debug\Capital_Letters_In_Array.exe
+C:\Users\Ivcho\documents\visual studio 2015\Projects\Arrays\Capital_Letters_In_Array\obj\Debug\Capital_Letters_In_Array.pdb

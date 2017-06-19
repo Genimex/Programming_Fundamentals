@@ -1,0 +1,1 @@
+C:\Users\Ivcho\documents\visual studio 2015\Projects\Arrays\Count_Of_Negative_Elements_In_Array\bin\Debug\Count_Of_Negative_Elements_In_Array.exe.config

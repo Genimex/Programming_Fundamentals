@@ -1,0 +1,6 @@
+c:\users\ivcho\documents\visual studio 2015\Projects\Arrays\Nth_Digit\bin\Debug\Nth_Digit.exe.config
+c:\users\ivcho\documents\visual studio 2015\Projects\Arrays\Nth_Digit\bin\Debug\Nth_Digit.exe
+c:\users\ivcho\documents\visual studio 2015\Projects\Arrays\Nth_Digit\bin\Debug\Nth_Digit.pdb
+c:\users\ivcho\documents\visual studio 2015\Projects\Arrays\Nth_Digit\obj\Debug\Nth_Digit.csprojResolveAssemblyReference.cache
+c:\users\ivcho\documents\visual studio 2015\Projects\Arrays\Nth_Digit\obj\Debug\Nth_Digit.exe
+c:\users\ivcho\documents\visual studio 2015\Projects\Arrays\Nth_Digit\obj\Debug\Nth_Digit.pdb

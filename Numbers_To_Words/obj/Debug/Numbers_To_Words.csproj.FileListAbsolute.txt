@@ -1,0 +1,1 @@
+C:\Users\Ivcho\documents\visual studio 2015\Projects\Arrays\Numbers_To_Words\bin\Debug\Numbers_To_Words.exe.config

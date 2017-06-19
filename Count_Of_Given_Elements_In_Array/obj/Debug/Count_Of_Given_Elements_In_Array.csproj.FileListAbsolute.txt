@@ -1,0 +1,5 @@
+C:\Users\Ivcho\documents\visual studio 2015\Projects\Arrays\Count_Of_Given_Elements_In_Array\bin\Debug\Count_Of_Given_Elements_In_Array.exe.config
+C:\Users\Ivcho\documents\visual studio 2015\Projects\Arrays\Count_Of_Given_Elements_In_Array\bin\Debug\Count_Of_Given_Elements_In_Array.exe
+C:\Users\Ivcho\documents\visual studio 2015\Projects\Arrays\Count_Of_Given_Elements_In_Array\bin\Debug\Count_Of_Given_Elements_In_Array.pdb
+C:\Users\Ivcho\documents\visual studio 2015\Projects\Arrays\Count_Of_Given_Elements_In_Array\obj\Debug\Count_Of_Given_Elements_In_Array.exe
+C:\Users\Ivcho\documents\visual studio 2015\Projects\Arrays\Count_Of_Given_Elements_In_Array\obj\Debug\Count_Of_Given_Elements_In_Array.pdb

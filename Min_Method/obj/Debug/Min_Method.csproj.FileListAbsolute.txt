@@ -1,0 +1,6 @@
+c:\users\ivcho\documents\visual studio 2015\Projects\Arrays\Min_Method\bin\Debug\Min_Method.exe.config
+c:\users\ivcho\documents\visual studio 2015\Projects\Arrays\Min_Method\bin\Debug\Min_Method.exe
+c:\users\ivcho\documents\visual studio 2015\Projects\Arrays\Min_Method\bin\Debug\Min_Method.pdb
+c:\users\ivcho\documents\visual studio 2015\Projects\Arrays\Min_Method\obj\Debug\Min_Method.csprojResolveAssemblyReference.cache
+c:\users\ivcho\documents\visual studio 2015\Projects\Arrays\Min_Method\obj\Debug\Min_Method.exe
+c:\users\ivcho\documents\visual studio 2015\Projects\Arrays\Min_Method\obj\Debug\Min_Method.pdb
