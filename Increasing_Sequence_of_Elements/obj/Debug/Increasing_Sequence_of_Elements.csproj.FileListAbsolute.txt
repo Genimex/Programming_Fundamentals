@@ -1,5 +1,0 @@
-C:\Users\Ivcho\documents\visual studio 2015\Projects\Arrays\Increasing_Sequence_of_Elements\bin\Debug\Increasing_Sequence_of_Elements.exe.config
-C:\Users\Ivcho\documents\visual studio 2015\Projects\Arrays\Increasing_Sequence_of_Elements\bin\Debug\Increasing_Sequence_of_Elements.exe
-C:\Users\Ivcho\documents\visual studio 2015\Projects\Arrays\Increasing_Sequence_of_Elements\bin\Debug\Increasing_Sequence_of_Elements.pdb
-C:\Users\Ivcho\documents\visual studio 2015\Projects\Arrays\Increasing_Sequence_of_Elements\obj\Debug\Increasing_Sequence_of_Elements.exe
-C:\Users\Ivcho\documents\visual studio 2015\Projects\Arrays\Increasing_Sequence_of_Elements\obj\Debug\Increasing_Sequence_of_Elements.pdb

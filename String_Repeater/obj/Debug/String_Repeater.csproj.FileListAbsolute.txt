@@ -1,6 +1,0 @@
-c:\users\ivcho\documents\visual studio 2015\Projects\Arrays\String_Repeater\bin\Debug\String_Repeater.exe.config
-c:\users\ivcho\documents\visual studio 2015\Projects\Arrays\String_Repeater\bin\Debug\String_Repeater.exe
-c:\users\ivcho\documents\visual studio 2015\Projects\Arrays\String_Repeater\bin\Debug\String_Repeater.pdb
-c:\users\ivcho\documents\visual studio 2015\Projects\Arrays\String_Repeater\obj\Debug\String_Repeater.csprojResolveAssemblyReference.cache
-c:\users\ivcho\documents\visual studio 2015\Projects\Arrays\String_Repeater\obj\Debug\String_Repeater.exe
-c:\users\ivcho\documents\visual studio 2015\Projects\Arrays\String_Repeater\obj\Debug\String_Repeater.pdb
