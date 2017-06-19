@@ -1,0 +1,3 @@
+C:\Users\Ivcho\Documents\Visual Studio 2015\Projects\Arrays\Hello_name\bin\Debug\Arrays_Task1.exe.config
+C:\Users\Ivcho\Documents\Visual Studio 2015\Projects\Arrays\Hello_name\obj\Debug\Arrays_Task1.exe
+C:\Users\Ivcho\Documents\Visual Studio 2015\Projects\Arrays\Hello_name\obj\Debug\Arrays_Task1.pdb
