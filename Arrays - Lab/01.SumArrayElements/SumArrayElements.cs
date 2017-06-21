@@ -12,15 +12,15 @@ namespace SumArrayElements
         {
             int numberOfElements = int.Parse(Console.ReadLine());
             int[] elements = new int[numberOfElements];
-            int sum = 0;
+            int sumOfElements = 0;
 
             for (int i = 0; i < elements.Length; i++)
             {
                 int currentNumber = int.Parse(Console.ReadLine());
                 elements[i] = currentNumber;
-                sum += elements[i];
+                sumOfElements += elements[i];
             }
-            Console.WriteLine(sum);
+            Console.WriteLine(sumOfElements);
         }
     }
 }
