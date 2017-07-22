@@ -117,15 +117,19 @@ namespace Phone
         }
     }
 }
-// another task
-namespace __04.Phone
-{
-    using System;
-    using System.Linq;
+// another solution
 
-    public class Program
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Phone
+{
+    class Program
     {
-        public static void Main()
+        static void Main(string[] args)
         {
             string[] phoneNumbers = Console.ReadLine().Split();
             string[] names = Console.ReadLine().Split();
