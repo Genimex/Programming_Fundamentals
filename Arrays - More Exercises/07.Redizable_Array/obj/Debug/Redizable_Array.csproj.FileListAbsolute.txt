@@ -1,2 +1,0 @@
-C:\Users\Ivcho\documents\visual studio 2015\Projects\Arrays - More Exercises\Redizable_Array\bin\Debug\Redizable_Array.exe.config
-C:\Users\Ivcho\Documents\Visual Studio 2015\Projects\Arrays - More Exercises\07.Redizable_Array\bin\Debug\Redizable_Array.exe.config
