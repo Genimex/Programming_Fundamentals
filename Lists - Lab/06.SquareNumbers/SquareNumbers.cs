@@ -10,22 +10,24 @@ namespace SquareNumbers
     {
         static void Main(string[] args)
         {
-            List<int> numbers = Console.ReadLine().Split(' ').Select(int.Parse).ToList();
+            List<int> inputNumbers = Console.ReadLine()
+                .Split(new char[] {' '}, StringSplitOptions.RemoveEmptyEntries)
+                .Select(int.Parse)
+                .ToList();
+
+            inputNumbers.Sort();
+            inputNumbers.Reverse();
 
             List<int> squareNumbers = new List<int>();
 
-            numbers.Sort();
-            numbers.Reverse();
-
-            for (int i = 0; i < numbers.Count; i++)
+            for (int i = 0; i < inputNumbers.Count; i++)
             {
-                if (Math.Sqrt(numbers[i]) == (int)(Math.Sqrt(numbers[i])))
+                if (Math.Sqrt(inputNumbers[i]) == (int)Math.Sqrt(inputNumbers[i]))
                 {
-                    squareNumbers.Add(numbers[i]);
+                    squareNumbers.Add(inputNumbers[i]);
                 }
             }
-
-            Console.WriteLine(string.Join(" ", squareNumbers));
+            Console.WriteLine(string.Join(" ",squareNumbers));
         }
     }
 }

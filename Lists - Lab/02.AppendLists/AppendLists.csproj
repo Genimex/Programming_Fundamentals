@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{4564CBD0-0E6F-4FEA-BE25-B433258B5EAB}</ProjectGuid>
+    <ProjectGuid>{1B97AF01-8051-4FE6-B34D-5F585969647D}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>AppendLists</RootNamespace>
-    <AssemblyName>AppendLists</AssemblyName>
+    <RootNamespace>AppendLists___new</RootNamespace>
+    <AssemblyName>AppendLists - new</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

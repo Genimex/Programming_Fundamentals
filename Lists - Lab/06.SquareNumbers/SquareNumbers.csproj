@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{B77D583A-F1AA-4E02-82FD-188474BA399E}</ProjectGuid>
+    <ProjectGuid>{C83D1DF3-3323-48CF-866B-4A21E0E5AA6E}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>SquareNumbers</RootNamespace>

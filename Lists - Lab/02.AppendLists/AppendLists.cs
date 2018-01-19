@@ -10,20 +10,21 @@ namespace AppendLists
     {
         static void Main(string[] args)
         {
-            List<string> tokens = Console.ReadLine().Split('|').ToList();
-            string result = string.Empty;
+            List<string> inputNumbers = Console.ReadLine().Split('|').ToList();
 
-            for (int i = tokens.Count - 1; i >= 0; i--)
+            string results = string.Empty;
+
+            for (int i = inputNumbers.Count - 1; i >= 0; i--)
             {
-                string elements = tokens[i];
-                var parts = elements.Split(new char[] {' '}, StringSplitOptions.RemoveEmptyEntries).ToList();
+                string element = inputNumbers[i];
+                List<string> numbers = element.Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries).ToList();
 
-                for (int append = 0; append < parts.Count; append++)
+                for (int append = 0; append < numbers.Count; append++)
                 {
-                    result += parts[append] + " ";
+                    results += numbers[append] + " ";
                 }
             }
-            Console.WriteLine(result);
+            Console.WriteLine(string.Join(" ", results));
         }
     }
 }

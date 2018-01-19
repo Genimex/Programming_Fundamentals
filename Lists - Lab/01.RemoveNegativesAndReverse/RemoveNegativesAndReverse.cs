@@ -10,27 +10,26 @@ namespace RemoveNegativesAndReverse
     {
         static void Main(string[] args)
         {
-            List<int> inputIntegers = Console.ReadLine().Split(' ').Select(int.Parse).ToList();
+            List<int> nums = Console.ReadLine().Split(' ').Select(int.Parse).ToList();
 
-            for (int i = 0; i < inputIntegers.Count; i++)
+            List<int> saveNums = new List<int>();
+
+            var counter = saveNums.Count;
+
+            foreach (var number in nums)
             {
-                if (inputIntegers[i] < 0)
+                if (number > 0)
                 {
-                    inputIntegers.RemoveAt(i);
-                    i--;
+                    saveNums.Add(number);
                 }
             }
-
-            inputIntegers.Reverse();
-
-            if (inputIntegers.Count > 0)
-            {
-                Console.WriteLine(String.Join(" ",inputIntegers));
-            }
-            else
+            if (saveNums.Count <= 0)
             {
                 Console.WriteLine("empty");
+                return;
             }
+            saveNums.Reverse();
+            Console.WriteLine(String.Join(" ",saveNums));
         }
     }
 }

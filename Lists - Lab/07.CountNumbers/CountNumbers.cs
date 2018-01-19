@@ -10,22 +10,24 @@ namespace CountNumbers
     {
         static void Main(string[] args)
         {
-            List<int> numbers = Console.ReadLine().Split(' ').Select(int.Parse).ToList();
+            List<int> inputNumbers = Console.ReadLine().Split(' ').Select(int.Parse).ToList();
 
-            numbers.Sort();
-            numbers.Add(int.MaxValue);
-            int count = 1;
+            inputNumbers.Sort();
 
-            for (int i = 0; i < numbers.Count - 1; i++)
+            inputNumbers.Add(int.MaxValue);
+
+            int counter = 1;
+
+            for (int i = 0; i < inputNumbers.Count - 1; i++)
             {
-                if (numbers[i] == numbers[i + 1])
+                if (inputNumbers[i] == inputNumbers[i + 1])
                 {
-                    count++;
+                    counter++;
                 }
                 else
                 {
-                    Console.WriteLine($"{numbers[i]} -> {count}");
-                    count = 1;
+                    Console.WriteLine("{0} -> {1}", inputNumbers[i], counter);
+                    counter = 1;
                 }
             }
         }

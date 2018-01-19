@@ -10,11 +10,11 @@ namespace SortNumbers
     {
         static void Main(string[] args)
         {
-            List<decimal> numbers = Console.ReadLine().Split(' ').Select(decimal.Parse).ToList();
+            List<double> inputNumbers = Console.ReadLine().Split(new char [] { ' ' }
+                ,StringSplitOptions.RemoveEmptyEntries).Select(double.Parse).ToList();
+            inputNumbers.Sort();
 
-            numbers.Sort();
-
-            Console.WriteLine(string.Join(" <= ", numbers));
+            Console.WriteLine(string.Join(" <= ", inputNumbers));
         }
     }
 }

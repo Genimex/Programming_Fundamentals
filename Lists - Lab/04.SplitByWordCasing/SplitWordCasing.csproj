@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{D0597D40-F3CA-4AF7-AEBA-83E638527506}</ProjectGuid>
+    <ProjectGuid>{182D4126-C77F-470D-9BDE-54C2B084CEAD}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>SplitByWordCasing</RootNamespace>
-    <AssemblyName>SplitByWordCasing</AssemblyName>
+    <RootNamespace>AppendLists</RootNamespace>
+    <AssemblyName>AppendLists</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,7 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="SplitByWordCasing.cs" />
+    <Compile Include="SplitWordCasing.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
