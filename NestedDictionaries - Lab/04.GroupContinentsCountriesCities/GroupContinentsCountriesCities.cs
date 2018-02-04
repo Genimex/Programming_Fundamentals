@@ -1,45 +1,46 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace GroupContinentsCountriesCities
 {
-
-    public class Program
+    class Program
     {
-        public static void Main()
+        static void Main(string[] args)
         {
-            SortedDictionary<string, SortedDictionary<string, SortedSet<string>>> globalData = new SortedDictionary<string, SortedDictionary<string, SortedSet<string>>>();
+            SortedDictionary<string, SortedDictionary<string, SortedSet<string>>> continentData =
+                new SortedDictionary<string, SortedDictionary<string, SortedSet<string>>>();
 
-            int n = int.Parse(Console.ReadLine());
+            int rows = int.Parse(Console.ReadLine());
 
-            for (int i = 0; i < n; i++)
+            for (int i = 0; i < rows; i++)
             {
-                string[] inputData = Console.ReadLine().Split(new [] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
+                string[] insertData = Console.ReadLine().Split(' ').ToArray();
+                string continent = insertData[0];
+                string country = insertData[1];
+                string city = insertData[2];
 
-                string continent = inputData[0];
-                string country = inputData[1];
-                string city = inputData[2];
-
-                if (!globalData.ContainsKey(continent))
+                if (!continentData.ContainsKey(continent))
                 {
-                    globalData[continent] = new SortedDictionary<string, SortedSet<string>>();
+                    continentData.Add(continent, new SortedDictionary<string, SortedSet<string>>());
                 }
-
-                if (!globalData[continent].ContainsKey(country))
+                if (!continentData[continent].ContainsKey(country))
                 {
-                    globalData[continent][country] = new SortedSet<string>();
+                    continentData[continent].Add(country, new SortedSet<string>());
                 }
-                globalData[continent][country].Add(city);
+                continentData[continent][country].Add(city);
             }
-
-            foreach (var continet in globalData)
+            foreach (KeyValuePair<string, SortedDictionary<string, SortedSet<string>>> data in continentData)
             {
-                Console.WriteLine($"{continet.Key}:");
+                SortedDictionary<string, SortedSet<string>> countriesData = data.Value;
+                Console.WriteLine($" {data.Key}:");
 
-                foreach (var country in continet.Value)
+                foreach (KeyValuePair<string, SortedSet<string>> countryData in countriesData)
                 {
-                    Console.WriteLine($"{country.Key} -> {string.Join(", ", country.Value)}");
+                    SortedSet<string> cities = countryData.Value;
+                    Console.WriteLine($"{countryData.Key} -> {string.Join(", ", cities)}");
                 }
             }
         }
