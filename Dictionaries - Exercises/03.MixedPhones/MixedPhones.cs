@@ -6,42 +6,38 @@ using System.Threading.Tasks;
 
 namespace MixedPhones
 {
-    class MixedPhones
+    class Program
     {
         static void Main(string[] args)
         {
-            string[] line = Console.ReadLine().Split(new[] {' '}, StringSplitOptions.RemoveEmptyEntries).ToArray();
+            string[] input = Console.ReadLine().Split(new [] { ' ' },StringSplitOptions.RemoveEmptyEntries).ToArray();
 
-            SortedDictionary<string, long> phoneNumbers = new SortedDictionary<string, long>();
+            SortedDictionary<string,long> dict = new SortedDictionary<string, long>();
 
-            while (line[0] != "Over")
+            while (input[0] != "Over")
             {
                 long phone = 0;
-                string person = String.Empty;
-
-                if (long.TryParse(line[0], out phone))
+                string name = String.Empty;
+                if (long.TryParse(input[0], out phone))
                 {
-                    person = line[2];
+                    name = input[2];
                 }
                 else
                 {
-                    person = line[0];
-                    phone = long.Parse(line[2]);
+                    name = input[0];
+                    phone = long.Parse(input[2]);
                 }
-
-                if (!phoneNumbers.ContainsKey(person))
+                if (!dict.ContainsKey(name))
                 {
-                    phoneNumbers[person] = 0;
+                    dict[name] = 0;
                 }
-                phoneNumbers[person] = phone;
+                dict[name] = phone;
 
-
-                line = Console.ReadLine().Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries).ToArray();
+                input = Console.ReadLine().Split(new[] {' '}, StringSplitOptions.RemoveEmptyEntries).ToArray();
             }
-
-            foreach (var kvp in phoneNumbers)
+            foreach (KeyValuePair<string,long> data in dict)
             {
-                Console.WriteLine($"{kvp.Key} -> {kvp.Value}");
+                Console.WriteLine($"{data.Key} -> {data.Value}");
             }
         }
     }

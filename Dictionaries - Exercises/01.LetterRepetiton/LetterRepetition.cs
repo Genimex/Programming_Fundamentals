@@ -4,25 +4,25 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LetterRepetiton
+namespace LetterRepetition
 {
     class Program
     {
         static void Main(string[] args)
         {
-            char[] letters = Console.ReadLine().ToArray();
-            
-            Dictionary<char,int> output = new Dictionary<char, int>();
+            Dictionary<char,int> letters = new Dictionary<char, int>();
 
-            foreach (var letter in letters)
+            char[] input = Console.ReadLine().ToCharArray();
+
+            for (int i = 0; i < input.Length; i++)
             {
-                if (!output.ContainsKey(letter))
+                if (!letters.ContainsKey(input[i]))
                 {
-                    output[letter] = 0;
+                    letters.Add(input[i], 0);
                 }
-                output[letter]++;
+                letters[input[i]]++;
             }
-            foreach (var letter in output)
+            foreach (KeyValuePair<char,int> letter in letters)
             {
                 Console.WriteLine($"{letter.Key} -> {letter.Value}");
             }

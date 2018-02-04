@@ -4,40 +4,35 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Dict___Ref
+namespace Dictionary___ex
 {
     class Program
     {
         static void Main(string[] args)
         {
-            string[] input = Console.ReadLine().Split().ToArray();
+            Dictionary<string,int> words = new Dictionary<string, int>();
 
-            Dictionary<string ,int> dictDef = new Dictionary<string, int>();
+            List<string> input = Console.ReadLine().Split(' ').Select(w => w.ToLower()).ToList();
 
-            while (input[0] != "end")
+            for (int i = 0; i < input.Count; i++)
             {
-                string firstElement = input[0];
-                string secondElement = input[2];
-                int value = 0;
+                if (!words.ContainsKey(input[i]))
+                {
+                    words.Add(input[i], 0);
+                }
+                words[input[i]]++;
+            }
 
-                if (int.TryParse(secondElement, out value))
-                {
-                    dictDef[firstElement] = value;
-                }
-                else
-                {
-                    if (dictDef.ContainsKey(secondElement))
-                    {
-                        int secondEntryValue = dictDef[secondElement];
-                        dictDef[firstElement] = secondEntryValue;
-                    }
-                }
-                input = Console.ReadLine().Split().ToArray();
-            }
-            foreach (var kvp in dictDef)
+            List<string> result = new List<string>();
+
+            foreach (KeyValuePair<string,int> word in words)
             {
-                Console.WriteLine($"{kvp.Key} === {kvp.Value}");
+                if (word.Value % 2 != 0)
+                {
+                    result.Add(word.Key);
+                }
             }
+            Console.WriteLine(String.Join(", ", result));
         }
     }
 }

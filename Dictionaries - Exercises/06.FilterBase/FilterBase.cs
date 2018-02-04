@@ -1,28 +1,30 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace FilterBase
 {
     class Program
     {
-        static void Main()
+        static void Main(string[] args)
         {
-            string[] line = Console.ReadLine().Split(new [] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
+            string[] input = Console.ReadLine().Split(new[] {' '}, StringSplitOptions.RemoveEmptyEntries).ToArray();
 
-            var age = new Dictionary<string, int>();
-            var salary = new Dictionary<string, decimal>();
-            var position = new Dictionary<string, string>();
+            Dictionary<string,int> age = new Dictionary<string, int>();
+            Dictionary<string,decimal> salary = new Dictionary<string, decimal>();
+            Dictionary<string,string> position = new Dictionary<string, string>();
 
-            while (line[0] != "filter")
+            while (input[0] != "filter")
             {
-                string name = line[0];
-                string dataToStore = line[2];
+                string name = input[0];
+                string dataStore = input[2];
 
                 int employeeAge = 0;
                 decimal employeeSalary = 0m;
 
-                if (int.TryParse(dataToStore, out employeeAge))
+                if (int.TryParse(dataStore,out employeeAge))
                 {
                     if (!age.ContainsKey(name))
                     {
@@ -30,7 +32,7 @@ namespace FilterBase
                     }
                     age[name] = employeeAge;
                 }
-                else if (decimal.TryParse(dataToStore, out employeeSalary))
+                else if (decimal.TryParse(dataStore,out employeeSalary))
                 {
                     if (!salary.ContainsKey(name))
                     {
@@ -42,59 +44,41 @@ namespace FilterBase
                 {
                     if (!position.ContainsKey(name))
                     {
-                        position[name] = string.Empty;
+                        position[name] = String.Empty;
                     }
-                    position[name] = dataToStore;
+                    position[name] = dataStore;
                 }
-
-                line = Console.ReadLine().Split(new [] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
+                input = Console.ReadLine().Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries).ToArray();
             }
+            input = Console.ReadLine().Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries).ToArray();
 
-            line = Console.ReadLine().Split(new [] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
-
-            switch (line[0])
+            if (input[0] == "Position")
             {
-                case "Position":
-                    Print(position);
-                    break;
-                case "Age":
-                    Print(age);
-                    break;
-                case "Salary":
-                    Print(salary);
-                    break;
+                foreach (KeyValuePair<string,string> data in position)
+                {
+                    Console.WriteLine($"Name: {data.Key}");
+                    Console.WriteLine($"Position: {data.Value}");
+                    Console.WriteLine("{0}",new string('=',20));
+                }
             }
-        }
-        
-        static void Print(Dictionary<string, int> personData)
-        {
-            foreach (var person in personData)
+            else if (input[0] == "Age")
             {
-                Console.WriteLine($"Name: {person.Key}");
-                Console.WriteLine($"Age: {person.Value}");
-                Console.WriteLine(new string('=', 20));
+                foreach (KeyValuePair<string,int> data in age)
+                {
+                    Console.WriteLine($"Name: {data.Key}");
+                    Console.WriteLine($"Age: {data.Value}");
+                    Console.WriteLine("{0}", new string('=', 20));
+                }
             }
-        }
-
-        static void Print(Dictionary<string, decimal> personData)
-        {
-            foreach (var person in personData)
+            else if (input[0] == "Salary")
             {
-                Console.WriteLine($"Name: {person.Key}");
-                Console.WriteLine($"Salary: {person.Value:f2}");
-                Console.WriteLine(new string('=', 20));
-            }
-        }
-
-        static void Print(Dictionary<string, string> personData)
-        {
-            foreach (var person in personData)
-            {
-                Console.WriteLine($"Name: {person.Key}");
-                Console.WriteLine($"Position: {person.Value}");
-                Console.WriteLine(new string('=', 20));
+                foreach (KeyValuePair<string,decimal> data in salary)
+                {
+                    Console.WriteLine($"Name: {data.Key}");
+                    Console.WriteLine($"Salary: {data.Value}");
+                    Console.WriteLine("{0}", new string('=', 20));
+                }
             }
         }
     }
 }
-       
